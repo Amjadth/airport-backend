@@ -2,7 +2,8 @@ from fastapi import FastAPI, Depends, HTTPException, UploadFile, File
 from sqlalchemy.orm import Session
 from .database import SessionLocal, Passenger
 import qrcode, os
-from pyzbar.pyzbar import decode
+import cv2
+import numpy as np
 from PIL import Image
 
 # Create the FastAPI app instance
