@@ -4,3 +4,4 @@ venv/
 qr_codes/
 .env
 
+venv/
